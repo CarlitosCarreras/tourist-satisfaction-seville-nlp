@@ -10,6 +10,18 @@ The analysis was conducted as part of a collaboration with the Institute of Stat
 
 ---
 
+## Project Highlights
+
+- Analysed 3,937 tourist reviews from TripAdvisor and Civitatis.
+- Estimated overall tourist satisfaction in Seville using NLP techniques.
+- Applied the Spanish transformer model roBERTuito for sentiment classification.
+- Compared satisfaction by travel type, tourist origin and tourist attraction.
+- Identified key drivers of dissatisfaction through thematic analysis.
+- Developed evidence-based recommendations for tourism management.
+- Conducted during an internship at the Institute of Statistics and Cartography of Andalusia (IECA).
+
+---
+
 ## Research Questions
 
 - What is the overall level of tourist satisfaction in Seville?
