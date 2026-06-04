@@ -15,8 +15,8 @@ The analysis was conducted as part of a collaboration with the Institute of Stat
 - Analysed 3,937 tourist reviews from TripAdvisor and Civitatis.
 - Estimated overall tourist satisfaction in Seville using NLP techniques.
 - Applied the Spanish transformer model roBERTuito for sentiment classification.
-- Compared satisfaction by travel type, tourist origin and tourist attraction.
-- Identified key drivers of dissatisfaction through thematic analysis.
+- Compared satisfaction by travel type, visitor origin, and tourist attraction.
+- Identified key drivers of satisfaction and dissatisfaction through thematic analysis.
 - Developed evidence-based recommendations for tourism management.
 - Conducted during an internship at the Institute of Statistics and Cartography of Andalusia (IECA).
 
@@ -41,7 +41,7 @@ The dataset was obtained through web scraping of online reviews published on:
 
 The collected reviews correspond to major tourist attractions and tourism services located in Seville.
 
-The original dataset is not distributed in this repository.
+An anonymized version of the dataset is included in this repository.
 
 ---
 
@@ -57,9 +57,9 @@ The analysis followed four main stages.
 
 ### 2. Sentiment Analysis
 
-Sentiment classification was performed using transformer-based language models specialized in Spanish-language text.
+Sentiment classification was performed using the Spanish transformer-based model **roBERTuito**.
 
-The model classified reviews into:
+Reviews were classified into:
 
 - Positive
 - Neutral
@@ -87,10 +87,42 @@ Reviews were analyzed to identify recurring topics associated with:
 ## Main Results
 
 - Analysis of 3,937 tourist reviews from TripAdvisor and Civitatis.
-- High overall tourist satisfaction levels were observed.
-- Positive reviews largely focused on cultural heritage, architecture, and visitor experiences.
-- Negative reviews were mainly associated with service quality, waiting times, and organizational issues.
+- More than 80% of reviews expressed positive sentiment.
+- Positive reviews largely focused on cultural heritage, architecture, guided tours, and visitor experiences.
+- Negative reviews were mainly associated with service quality, waiting times, ticket access, and organizational issues.
 - NLP techniques proved effective for extracting actionable insights from unstructured tourism data.
+
+---
+
+## Key Visual Results
+
+### Overall Tourist Satisfaction
+
+![Overall Tourist Satisfaction](results/overall-tourist-satisfaction.png)
+
+### Tourist Satisfaction by Type of Trip
+
+![Tourist Satisfaction by Type of Trip](results/tourist-satisfaction-by-type-of-trip.png)
+
+### Tourist Satisfaction by Visitor Origin
+
+![Tourist Satisfaction by Visitor Origin](results/residents-and-foreigners-tourist-satisfaction.png)
+
+### Tourist Satisfaction by Attraction
+
+![Tourist Satisfaction by Attraction](results/tourist-satisfaction-of-most-commented-attractions.png)
+
+### Most Commented Attractions
+
+![Most Commented Attractions](results/most-commented-attractions.png)
+
+### Positive Reviews Word Cloud
+
+![Positive Reviews Word Cloud](results/positive-comments-word-cloud.png)
+
+### Negative Reviews Word Cloud
+
+![Negative Reviews Word Cloud](results/negative-comments-word-cloud.png)
 
 ---
 
@@ -100,15 +132,21 @@ Reviews were analyzed to identify recurring topics associated with:
 tourist-satisfaction-seville-nlp/
 │
 ├── data/
+│   ├── tourist_reviews_anonymized.csv
 │   └── README.md
 │
 ├── results/
-│   └── Visualizations and figures
+│   ├── overall-tourist-satisfaction.png
+│   ├── tourist-satisfaction-by-type-of-trip.png
+│   ├── residents-and-foreigners-tourist-satisfaction.png
+│   ├── tourist-satisfaction-of-most-commented-attractions.png
+│   ├── most-commented-attractions.png
+│   ├── positive-comments-word-cloud.png
+│   ├── negative-comments-word-cloud.png
+│   └── README.md
 │
 ├── Seville_Tourist_Satisfaction_Analysis.ipynb
-│
 ├── requirements.txt
-│
 └── README.md
 ```
 
@@ -118,11 +156,12 @@ tourist-satisfaction-seville-nlp/
 
 - Python
 - Pandas
-- NumPy
 - Matplotlib
 - Seaborn
-- Transformers
 - PySentimiento
+- roBERTuito
+- WordCloud
+- NLP
 - Google Colab
 
 ---
@@ -131,7 +170,7 @@ tourist-satisfaction-seville-nlp/
 
 - Natural Language Processing (NLP)
 - Sentiment Analysis
-- Transformer Models
+- Transformer-Based Language Models
 - Web Scraping
 - Text Mining
 - Data Cleaning and Preprocessing
@@ -140,8 +179,8 @@ tourist-satisfaction-seville-nlp/
 - Tourism Analytics
 - Statistical Analysis
 - Computational Social Science
-- Applied Machine Learning
-- AI-Assisted Qualitative Analysis
+- Applied Artificial Intelligence
+- Research Communication
 
 ---
 
